@@ -88,7 +88,6 @@ body{
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	overflow-y: auto;
 }
 .cart .box{
 	position: relative;
