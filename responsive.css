@@ -1,0 +1,43 @@
+@media(min-width: 800px) and (max-width: 1200px){
+	.container{
+		width: calc(70% - 100px);		
+	}
+	.cart{
+		width: calc(100% - 200px);
+	}
+	.cart .box{
+		width: 230px;
+		height: 280px;
+	}
+	.cart .box .image-box .cond p{
+		font-size: 13px;
+	}
+	.cart .box .refurbish{
+		font-size: 14px;	
+	}
+	.cart .box .title{
+		font-size: 11px;
+		height: 55px;
+		line-height: 16px;
+	}
+	.cart .box .price{
+		height: 25px;
+	}
+	.cart .box .price .current-price{	
+		font-size: 17px;
+	}
+	.cart .box .price .actual-price{
+		font-size: 12px;		
+	}
+	.cart .box .price .offer{
+		font-size: 11px;
+	}
+	.cart .box .image-box .heart i{
+		font-size: 14px;
+	}
+}
+@media(min-width: 200px) and (max-width: 800px){
+	.container{
+		width: calc(100% - 100px);		
+	}
+}

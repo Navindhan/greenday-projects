@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">		
+		<div class="back"><i class="fa fa-arrow-left"></i> Login / Sign up</div>
+		<div class="login-box">
+			<div class="login-head">
+				<div class="for-login">LOGIN</div>
+				<div class="for-signup">SIGN UP</div>
+			</div>
+			<input type="text" id="user" placeholder="Phone Number or Email"><br>
+		
+			<input type="password" id="pass" placeholder="Password">
+			<br>
+			
+			<button class="forgot"><p>Forgot Password?</p></button><br>
+			<button class="submit" name="submit" onclick="login()">LOGIN</button>
+		</div>
+		<div class="other-login">
+			<div class="or">
+				 <div class="bar"></div><div class="span">or</div><div class="bar"></div>
+			</div>
+			<div class="with-sms" id="sign-in-button" onclick="smslogin()">Login with SMS</div>
+			<div class="fb-gl">
+				<div class="fb" onclick="fblog()">
+					<div class="image"><p>f</p></div>
+					<div class="name">Facebook</div>
+				</div>
+				<div class="gl" onclick="gllog()">
+					<div class="image"><img src="google logo.png"></div>
+					<div class="name">Google</div>
+				</div>	
+			</div>
+		</div>		
+	</div>	
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBNYYz82h6E8SqvXvvXW3JZ8wx1lcSgSFo",
+    authDomain: "greenday-login.firebaseapp.com",
+    projectId: "greenday-login",
+    storageBucket: "greenday-login.appspot.com",
+    messagingSenderId: "858845377324",
+    appId: "1:858845377324:web:226d22228de0cec4453289",
+    measurementId: "G-5VD19FDBJ7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script type="text/javascript" src="login.js"></script>
+
+</html>

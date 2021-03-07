@@ -1,0 +1,198 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{	
+	background: #fff;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-y:auto; 
+}
+.container{
+	position: relative;
+	width: calc(100% - 550px);
+	height: 550px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.container .back{
+	width: 100%;
+	padding-left: 10px; 
+}
+.container .login-box{
+	width: 100%;
+	height: 250px;
+}
+.container .login-box .login-head{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+}
+.container .login-box .login-head .for-login,
+.container .login-box .login-head .for-signup{
+	width: 50%;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+.container .login-box .login-head .for-login:hover,
+.container .login-box .login-head .for-signup:hover{
+	background: rgba(0,0,0,0.05);
+}
+.container .login-box .login-head .for-login{
+	color: #ff6f2f;
+	border-bottom: 3px solid #ff6f2f;
+}
+.container .login-box input{
+	width: 100%;
+	height: 40px;
+	border: none;
+	outline: none;
+	padding: 20px 10px;
+	padding-bottom: 5px;
+	box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	margin: 5px 0;
+}
+.container .login-box input placeholder{
+	opacity: 0.5;
+}
+.container .login-box button{
+	border: none;
+	outline: none;
+}
+.container .login-box button.forgot{
+	color: blue;
+	width: 100%;
+	background: transparent;
+	text-align: right;
+	padding-right: 20px;
+	margin: 30px 0;
+	cursor: pointer;
+}
+.container .login-box button.submit{
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	background: #ff6f2f;
+	color: #fff;
+	cursor: pointer;
+}
+.container .login-box button.submit:hover{
+	background: #ff7f3f;
+}
+.container .other-login{
+	width: 100%;
+}
+.container .other-login .or{
+	margin: 20px 0;
+	color: rgba(0,0,0,0.3);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	transform: translateY(10px);
+}
+.container .other-login .or .bar{
+	width: calc(50% - 18px);
+	height: 1px;
+	background: rgba(0,0,0,0.3);
+}
+.container .other-login .or .span{
+	position: relative;
+	margin: 0 10px;
+	color: rgba(0,0,0,0.7);
+}
+.container .other-login .with-sms{
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	color: #ff6f2f;
+	border: 1px solid #ff6f2f;
+	border-bottom: 1px solid #ffbf7f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.container .other-login .with-sms:hover{
+	background: #eee;
+}
+.container .other-login .fb-gl{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+.container .other-login .fb-gl .fb{
+	width: calc(50% - 10px);
+	height: 45px;
+	background: #448;
+	color: #fff;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.container .other-login .fb-gl .fb:hover{
+	background: #558;
+}
+.container .other-login .fb-gl .fb .image{
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	color: #448;
+	font-weight: 700;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 45px;
+	margin: 0 5px 0 8px;
+}
+.container .other-login .fb-gl .fb .image p{
+	position: relative;
+	top: 6px;
+}
+
+.container .other-login .fb-gl .gl{
+	width: calc(50% - 10px);
+	height: 45px;
+	background: #55f;
+	color: #fff;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}	
+.container .other-login .fb-gl .gl:hover{
+	background: #66f;
+}
+.container .other-login .fb-gl .gl .image{
+	width: 42px;
+	height: 41px;
+	background: #fff;
+	border-radius: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2px;
+	margin-right: 7px; 
+}
+.container .other-login .fb-gl .gl .image img{
+	width: 50%;
+	height: 50%;
+}

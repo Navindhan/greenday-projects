@@ -1,0 +1,193 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	background: #ddd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.search-box{
+	background: #00f;
+	width: 300px;
+	height: 50px;
+}
+.search-box input{
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+	margin: 5px;
+	padding: 10px;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	outline: none;
+}
+
+.selection{
+	width: 300px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+.selection .option{
+	width: calc(50% - 4px);
+	height: 100%;
+	background: #fff;
+	margin: 0px 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+.selection .option i{
+	color: #aaa;
+	font-size: 13px;
+}
+
+.selection .option#sort .sort-box,
+.selection .option#filter .filter-box{
+	position: absolute;
+	background: #fff;
+	z-index: 0;	
+	transform: translate(10px,0px);
+	transition: 0.5s;
+	visibility: hidden;	
+}
+.selection .option#sort .sort-box li,
+.selection .option#filter .filter-box li{
+	list-style: none;
+	padding: 5px 10px;
+	border: 1px solid rgba(0,0,0,0.5);
+}
+.selection .option#sort .sort-box li:hover,
+.selection .option#filter .filter-box li:hover{
+	background: rgba(150,150,150,0.5);
+}
+.selection .option#sort .sort-box.active,
+.selection .option#filter .filter-box.active{
+	visibility: visible;
+	transform: translate(10px,60px);
+	z-index: 5;
+}
+.selection .option#filter .filter-box.active{
+	transform: translate(8px,120px);
+}
+.cart{
+	width: calc(100% - 100px);
+	height: 500px;
+	position: relative;
+	margin: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	overflow-y: auto;
+}
+.cart .box{
+	position: relative;
+	width: 300px;
+	height: 350px;
+	background: rgba(150,150,150,0.1);
+	margin: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2)
+}
+.cart .box .image-box{
+	position: relative;
+	width: calc(100% - 6px);
+	height: calc(60% - 6px);
+	background: #fff;
+	margin: 3px;
+}
+.cart .box .image-box img{
+	position: relative;
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+	z-index: 0;
+	object-fit: contain;
+	margin: 5px;
+}
+.cart .box .image-box .heart{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	border: 2px solid #ccc;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 1;
+	background: #fff;
+}
+.cart .box .image-box .heart:hover{
+	z-index: 2;
+}
+.cart .box .image-box .heart i{
+	font-size: 20px;
+	padding: 10px;
+	color: #ccc;
+}
+.cart .box .image-box .heart.active i{
+	color: #f00;
+}
+.cart .box .image-box .cond{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cart .box .image-box .cond p{
+	text-align: center;
+	padding: 5px 20px;
+	letter-spacing: 1px;
+	color: #fff;
+	background: green;	
+}
+.cart .box .refurbish{
+	width: 100%;
+	height: 30px;
+	background: #d5ffff;
+	padding: 5px 10px;
+}
+.cart .box .title{
+	width: 100%;
+	height: 70px;
+	padding: 8px 10px;
+	line-height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+	background: #fee;	
+}
+.cart .box .price{
+	width: 100%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-left: 15px;
+}
+.cart .box .price div{
+	margin: 0 5px;
+}
+.cart .box .price .current-price{
+	font-weight: bold;
+	font-size: 20px;
+}
+.cart .box .price .actual-price{
+	font-size: 15px;
+	color: #555;
+}
+.cart .box .price .offer{
+	font-size: 14px;
+	color: #f00;
+}
