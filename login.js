@@ -30,7 +30,7 @@ function login(){
 	var email=document.querySelector('#user').value;
 	var password=document.querySelector('#pass').value;
 
-	firebase.auth().createUserWithEmailAndPassword(email, password)
+	firebase.auth().signInWithEmailAndPassword(email, password)
 	  .then((userCredential) => {
 	    var user = userCredential.user;
 	    alert("Logged In");
