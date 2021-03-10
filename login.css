@@ -70,6 +70,13 @@ body{
 .container .login-box input placeholder{
 	opacity: 0.5;
 }
+.container .login-box i{
+	position: absolute;
+	transform: translate(-30px,25px);
+	cursor: pointer;
+	color: gray;
+}
+
 .container .login-box button{
 	border: none;
 	outline: none;
