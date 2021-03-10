@@ -1,4 +1,23 @@
 
+var pass=document.querySelector("#pass");
+var eye=document.querySelector('.container .login-box i');
+var eye_var=0;
+eye.addEventListener('click',function(){
+	if(eye_var==0){
+		pass.setAttribute('type','text');
+		eye_var=1;
+		eye.setAttribute('class','fa fa-eye');		
+		eye.style.color="blue";
+	}
+	else{
+		pass.setAttribute('type','password');
+		eye_var=0;	
+		eye.setAttribute('class','fa fa-eye-slash');
+		eye.style.color="gray";
+	}
+})
+
+
 var for_signup=document.querySelector('.for-signup');
 var for_login=document.querySelector('.for-login');
 
