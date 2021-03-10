@@ -64,7 +64,7 @@ body{
 .selection .option#filter .filter-box li{
 	list-style: none;
 	padding: 5px 10px;
-	border: 1px solid rgba(0,0,0,0.5);
+	border: 1px solid rgba(0,0,0,0.2);
 }
 .selection .option#sort .sort-box li:hover,
 .selection .option#filter .filter-box li:hover{
@@ -190,4 +190,24 @@ body{
 .cart .box .price .offer{
 	font-size: 14px;
 	color: #f00;
+}
+.suggestions{
+	background: #fff;
+	padding: 10px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	font-weight: bold;
+	box-shadow: 1px 1px 10px #000;
+}
+span.aa-suggestions{
+	background: #fff;
+	box-shadow: 1px 1px 10px #000;	
+}
+span.aa-suggestions .aa-suggestion{
+	padding: 10px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	font-style: italic;
+}  
+.empty{
+	background: #fff;
+	padding: 10px;
 }
